@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- bs5 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custome css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./image/100.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="icons">
+              <div id="search-btn" class="fa fa-search"></div>
+              <div id="cart-btn" class="fa-solid fa-cart-shopping"></div>
+              <div id="login-btn" class="fa-solid fa-user"></div>
+              <div id="menu-btn" class="fa-solid fa-bars"></div>
+            </div>
+          </nav> 
+            <form class="search-form">
+              <input
+                type="search"
+                placeholder="Search here....."
+                id="search-box"
+              />
+              <label for="search-box" class="fa fa-search"></label>
+            </form>
+            <div class="shopping-cart">
+              
+              
+              <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/download-removebg-preview (5).png" alt="" />
+                
+                <div class="content">
+                  <h5>Mocha Coffee</h5>
+                  <span class="price">$5.99</span>
+                  <span class="quantity"> Qty: 1</span>
+                </div>
+              </div>
+              <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/104.webp" alt="" />
+                
+                <div class="content">
+                  <h5>Muffin cake</h5>
+                  <span class="price">$2.90</span>
+                  <span class="quantity"> Qty: 2</span>
+                </div>
+              </div>
+              <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/105 Sandwich.webp" alt="" />
+                
+                <div class="content">
+                  <h5>Sandwich</h5>
+                  <span class="price">$2.00</span>
+                  <span class="quantity"> Qty: 1</span>
+                </div>
+              </div>
+              <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/103.jpg" alt="" />
+                
+                <div class="content">
+                  <h5>Donut</h5>
+                  <span class="price">$13.00</span>
+                  <span class="quantity"> Qty: 3</span>
+                </div>
+              </div>
+              <div class="total">Total : $23.89/-</div>
+              <a href="#" class="btn  button">Checkout</a>
+            </div>
+          </div>
+          <div class="Form-box">
+          <form action="#" class="Login-form">
+            <h2>Login Form</h2>
+            <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            
+            <input type="password" placeholder="Enter your password" required>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="rememder-forgot">
+            <label> <input type="checkbox" name="" id=""> Rememder me</label>
+            <a href="#">Forgot Password?</a>
+                <button type="submit"  class="button">Login</button>
+                  <div class="Register-btn">
+                    <p>Don't have an account ?
+                      <a href="#">Register </a>
+                    </p>
+                  </div>
+          </div>
+          </form>
+          <form action="#" class="Register-form">
+            <h2>Registration Form</h2>
+            <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder=" Enter your password" required>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="input-box">
+            
+            <input type="password" placeholder="Confirm password " required>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="rememder-forgot">
+            <label> <input type="checkbox" name="" id=""> Agree to the terms & conditions</label>
+            <a href="#">Forgot Password?</a>
+                <button type="submit"  class="button">Register</button>
+                  <div class="Login-btn">
+                    <p>Already have an account ?
+                      <a href="#">Login </a>
+                    </p>
+                  </div>
+          </div>
+          </form>
+          </div>
+        
+      <!-- navbar end -->
+    </header>
+    <!-- custome js -->
+
+    <script src="./javas.js"></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
